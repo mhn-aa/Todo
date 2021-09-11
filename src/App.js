@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import TodoList from "./TodoList";
+import "./App.css";
 
 const LOCAL_STORAGE_KEY = "todoApp.todos";
 
@@ -33,13 +34,29 @@ function App() {
     });
     todoNameRef.current.value = null;
   }
+
+  function handleClearTodos() {
+    const newTodos = todos.filter((todo) => !todo.complete);
+    setTodos(newTodos);
+  }
+
   return (
     <>
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <input ref={todoNameRef} type="text" />
-      <button onClick={handleAddTodo}>Add Todo</button>
-      <button>Clear Completed</button>
-      <div>0 left to do</div>
+      <div className="todolist">
+        <TodoList todos={todos} toggleTodo={toggleTodo} />
+      </div>
+      <div className="todos">
+        <input ref={todoNameRef} type="text" />
+      </div>
+      <div className="addtodo">
+        <button onClick={handleAddTodo}>Add Todo</button>
+      </div>
+      <div className="clear">
+        <button onClick={handleClearTodos}>Clear Completed</button>
+      </div>
+      <div className="completed">
+        {todos.filter((todo) => !todo.complete).length} left to do
+      </div>
     </>
   );
 }

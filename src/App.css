@@ -1,0 +1,28 @@
+body {
+  background-color: aquamarine;
+}
+.todolist {
+  color: navy;
+  display: grid;
+  justify-content: center;
+}
+
+.todos {
+  display: flex;
+  justify-content: center;
+}
+
+.addtodo {
+  display: flex;
+  justify-content: center;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+}
+
+.completed {
+  display: flex;
+  justify-content: center;
+}
