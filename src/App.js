@@ -42,11 +42,16 @@ function App() {
 
   return (
     <>
+      <div className="main__header">
+        {/* <div className="left_bar">React</div> */}
+        <div className="main_bar"></div>
+        {/* <div className="right_bar">mhn-aa</div> */}
+      </div>
       <div className="todolist">
         <TodoList todos={todos} toggleTodo={toggleTodo} />
       </div>
       <div className="todos">
-        <input ref={todoNameRef} type="text" />
+        <input className="the_box" ref={todoNameRef} type="text" />
       </div>
       <div className="addtodo">
         <button onClick={handleAddTodo}>Add Todo</button>
