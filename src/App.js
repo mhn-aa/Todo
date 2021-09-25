@@ -42,11 +42,6 @@ function App() {
 
   return (
     <>
-      <div className="main__header">
-        {/* <div className="left_bar">React</div> */}
-        <div className="main_bar"></div>
-        {/* <div className="right_bar">mhn-aa</div> */}
-      </div>
       <div className="todolist">
         <TodoList todos={todos} toggleTodo={toggleTodo} />
       </div>
