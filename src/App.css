@@ -1,6 +1,19 @@
 body {
   background-color: aquamarine;
 }
+.Head {
+  margin: 0px;
+  /* border-top: 9px solid gold; */
+  /* border-bottom: 9px solid gold; */
+  height: 72px;
+  background-color: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-left: 9px solid gold; */
+  /* border-right: 9px solid gold; */
+  background: linear-gradient(to right, royalblue, salmon, pink, white);
+}
 .todolist {
   color: navy;
   display: grid;

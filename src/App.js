@@ -42,6 +42,25 @@ function App() {
 
   return (
     <>
+      <div className="Head">
+        <svg width="70" height="70">
+          <circle
+            cx="35"
+            cy="35"
+            r="30"
+            stroke="Royalblue"
+            stroke-width="0"
+            fill="orange"
+          />
+        </svg>
+        <div className="left2">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div className="center1">{/* <h1 className="Name">RADIANT</h1> */}</div>
+        <div className="left3"></div>
+      </div>
       <div className="todolist">
         <TodoList todos={todos} toggleTodo={toggleTodo} />
       </div>
