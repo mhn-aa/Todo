@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import React, { useState, useRef, useEffect } from "react";
 import TodoList from "./TodoList";
 import "./App.css";
@@ -41,7 +42,7 @@ function App() {
   }
 
   return (
-    <>
+    <Router>
       <div className="Head">
         <svg width="70" height="70">
           <circle
@@ -61,22 +62,24 @@ function App() {
         <div className="center1">{/* <h1 className="Name">RADIANT</h1> */}</div>
         <div className="left3"></div>
       </div>
-      <div className="todolist">
-        <TodoList todos={todos} toggleTodo={toggleTodo} />
+      <div className="TodoList">
+        <div className="todolist">
+          <TodoList todos={todos} toggleTodo={toggleTodo} />
+        </div>
+        <div className="todos">
+          <input className="the_box" ref={todoNameRef} type="text" />
+        </div>
+        <div className="addtodo">
+          <button onClick={handleAddTodo}>Add Todo</button>
+        </div>
+        <div className="clear">
+          <button onClick={handleClearTodos}>Clear Completed</button>
+        </div>
+        <div className="completed">
+          {todos.filter((todo) => !todo.complete).length} left to do
+        </div>
       </div>
-      <div className="todos">
-        <input className="the_box" ref={todoNameRef} type="text" />
-      </div>
-      <div className="addtodo">
-        <button onClick={handleAddTodo}>Add Todo</button>
-      </div>
-      <div className="clear">
-        <button onClick={handleClearTodos}>Clear Completed</button>
-      </div>
-      <div className="completed">
-        {todos.filter((todo) => !todo.complete).length} left to do
-      </div>
-    </>
+    </Router>
   );
 }
 
