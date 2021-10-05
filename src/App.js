@@ -43,11 +43,11 @@ function App() {
 
   return (
     <Router>
-      {/* <div className="Head"> */}
-      <div className="left2"></div>
-      <div className="center1">{/* <h1 className="Name">RADIANT</h1> */}</div>
-      <div className="left3"></div>
-      {/* </div> */}
+      <div className="Head">
+        <div>X</div>
+        <div>X2</div>
+        <div>X3</div>
+      </div>
       <div className="TodoList">
         <div className="todolist">
           <TodoList todos={todos} toggleTodo={toggleTodo} />
@@ -64,6 +64,17 @@ function App() {
         <div className="completed">
           {todos.filter((todo) => !todo.complete).length} left to do
         </div>
+        <div className="Para">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+            blanditiis quam aperiam officia nostrum unde. Veritatis unde tempora
+            optio illo ipsa voluptatum, maxime vitae ipsum eaque facilis odit
+            autem officia.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3>Footer</h3>
       </div>
     </Router>
   );

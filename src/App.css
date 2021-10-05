@@ -18,7 +18,7 @@ body {
 
 .TodoList {
   border: 9px solid whitesmoke;
-  display: grid;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 45px;
@@ -58,4 +58,11 @@ body {
 .main__header {
   display: flex;
   justify-content: center;
+}
+
+Head:nth-child(1) {
+  background-color: yellow;
+}
+TodoList:nth-child(2) {
+  background-color: navy;
 }
