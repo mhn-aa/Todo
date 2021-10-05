@@ -1,25 +1,30 @@
 body {
-  background-color: aquamarine;
+  background-color: lightgray;
 }
 .Head {
   margin: 0px;
   margin: 0px solid red;
-  /* border-top: 9px solid gold; */
-  /* border-bottom: 9px solid gold; */
+  border-top: 9px solid gold;
+  border-bottom: 9px solid gold;
   height: 72px;
   background-color: royalblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-left: 9px solid gold; */
-  /* border-right: 9px solid gold; */
+  border-left: 9px solid gold;
+  border-right: 9px solid gold;
   background: linear-gradient(to right, royalblue, salmon, pink, white);
 }
+
 .TodoList {
-  height: 300px;
-  display: table;
-  flex: 80%;
-  align-items: flex-start;
+  border: 9px solid whitesmoke;
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 45px;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 45px;
 }
 .todolist {
   color: navy;
