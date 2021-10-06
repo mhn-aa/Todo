@@ -48,7 +48,7 @@ function App() {
         <div>X2</div>
         <div>X3</div>
       </div>
-      <div className="TodoList">
+      <div className="MegaTODO">
         <div className="todolist">
           <TodoList todos={todos} toggleTodo={toggleTodo} />
         </div>
@@ -73,7 +73,8 @@ function App() {
           </p>
         </div>
       </div>
-      <div>
+
+      <div className="Footer">
         <h3>Footer</h3>
       </div>
     </Router>
