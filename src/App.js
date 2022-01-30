@@ -47,6 +47,7 @@ function App() {
         <div>X</div>
         <div>X2</div>
         <div>X3</div>
+        <div>X4</div>
       </div>
 
       <div className="todolist">
