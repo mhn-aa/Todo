@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import React, { useState, useRef, useEffect } from "react";
-import TodoList from "./TodoList";
+import TodoList from "./Components/TodoList";
+import TodoApp from "./Components/TodoApp";
 import "./App.css";
 
 const LOCAL_STORAGE_KEY = "todoApp.todos";
@@ -43,40 +44,25 @@ function App() {
 
   return (
     <Router>
-      <div className="Head">
-        <div>X</div>
-        <div>X2</div>
-        <div>X3</div>
-        <div>X4</div>
-      </div>
-
-      <div className="todolist">
-        <TodoList todos={todos} toggleTodo={toggleTodo} />
-      </div>
-      <div className="todos">
-        <input className="the_box" ref={todoNameRef} type="text" />
-      </div>
-      <div className="addtodo">
-        <button onClick={handleAddTodo}>Add Todo</button>
-      </div>
-      <div className="clear">
-        <button onClick={handleClearTodos}>Clear Completed</button>
-      </div>
-      <div className="completed">
-        {todos.filter((todo) => !todo.complete).length} left to do
-      </div>
-      <div className="Para">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-          blanditiis quam aperiam officia nostrum unde. Veritatis unde tempora
-          optio illo ipsa voluptatum, maxime vitae ipsum eaque facilis odit
-          autem officia.
-        </p>
-      </div>
-
-      <div className="Footer">
-        <h3>Footer</h3>
-      </div>
+      <h1>Welcome to MHH page</h1>
+      <h3>4-Feb-2022</h3>
+      <p>
+        They call me Mahan. This probably will be my portfolio. I am trying to
+        consider a link for my Todo project below. In other words, with
+        allocating a box for it and by clicking on it, you will be directed to
+        TodoApp. #learning_react.
+      </p>
+      <Switch>
+        <TodoApp
+          toggleTodo={toggleTodo}
+          handleAddTodo={handleAddTodo}
+          handleClearTodos={handleClearTodos}
+          TodoList={TodoList}
+          todos={todos}
+          toggleTodo={toggleTodo}
+          todoNameRef={todoNameRef}
+        />
+      </Switch>
     </Router>
   );
 }
