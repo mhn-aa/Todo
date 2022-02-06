@@ -3,6 +3,8 @@ import React, { useState, useRef, useEffect } from "react";
 import TodoList from "./Components/TodoList";
 import TodoApp from "./Components/TodoApp";
 import { Link } from "react-router-dom";
+import Links from "./Components/Links";
+
 import "./App.css";
 
 const LOCAL_STORAGE_KEY = "todoApp.todos";
@@ -45,27 +47,19 @@ function App() {
 
   return (
     <Router>
-      <div className="mhn">
-        <h1>MHN</h1>
-        <p>
-          They call me Mahan. This probably will be my portfolio. I am trying to
-          consider a link for my Todo project below. In other words, with
-          allocating a box for it and by clicking on it, you will be directed to
-          TodoApp. #learning_react.
-        </p>
-      </div>
-      {/* <button>Todo</button> */}
+      <Links />
       <Switch>
-        <Route path="/TodoApp"></Route>
-        <TodoApp
-          toggleTodo={toggleTodo}
-          handleAddTodo={handleAddTodo}
-          handleClearTodos={handleClearTodos}
-          TodoList={TodoList}
-          todos={todos}
-          toggleTodo={toggleTodo}
-          todoNameRef={todoNameRef}
-        />
+        <Route path="/TodoApp">
+          <TodoApp
+            toggleTodo={toggleTodo}
+            handleAddTodo={handleAddTodo}
+            handleClearTodos={handleClearTodos}
+            TodoList={TodoList}
+            todos={todos}
+            toggleTodo={toggleTodo}
+            todoNameRef={todoNameRef}
+          />
+        </Route>
       </Switch>
     </Router>
   );
