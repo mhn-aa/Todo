@@ -42,7 +42,12 @@ Head:nth-child(1) {
   justify-content: center;
 }
 
-/* .mhn:nth-child(1) {
+.MHN {
   display: flex;
-  align-items: center;
-} */
+  justify-content: center;
+  text-decoration: none;
+}
+
+.TodoApp {
+  text-decoration: none;
+}

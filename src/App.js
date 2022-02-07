@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React, { useState, useRef, useEffect } from "react";
 import TodoList from "./Components/TodoList";
 import TodoApp from "./Components/TodoApp";
-import { Link } from "react-router-dom";
 import Links from "./Components/Links";
 
 import "./App.css";
