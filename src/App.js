@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import TodoList from "./Components/TodoList";
 import TodoApp from "./Components/TodoApp";
 import Links from "./Components/Links";
+import SnakeGame from "./Components/SnakeGame";
 
 import "./App.css";
 
@@ -58,6 +59,9 @@ function App() {
             toggleTodo={toggleTodo}
             todoNameRef={todoNameRef}
           />
+        </Route>
+        <Route path="/SnakeGame">
+          <SnakeGame />
         </Route>
       </Switch>
     </Router>
