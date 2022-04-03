@@ -55,6 +55,9 @@ Head:nth-child(1) {
 .SnakeGame {
   text-decoration: none;
 }
+.PacificStone {
+  text-decoration: none;
+}
 
 .game-area {
   position: relative;

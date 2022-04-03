@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Links = () => {
   return (
-    <div>
+    <div className="Links">
       <div>
         <Link className="MHN" to="/">
           MHN
@@ -19,6 +19,10 @@ const Links = () => {
           Snake
         </Link>
       </div>
+
+      <Link className="PacificStone" to="PacificStone">
+        PacificStone
+      </Link>
     </div>
   );
 };
