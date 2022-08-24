@@ -20,9 +20,9 @@ const Links = () => {
         </Link>
       </div>
 
-      <Link className="PacificStone" to="PacificStone">
+      {/* <Link className="PacificStone" to="PacificStone">
         PacificStone
-      </Link>
+      </Link> */}
     </div>
   );
 };

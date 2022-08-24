@@ -4,7 +4,7 @@ import TodoList from "./Components/TodoList";
 import TodoApp from "./Components/TodoApp";
 import Links from "./Components/Links";
 import SnakeGame from "./Components/SnakeGame";
-import PacificStone from "./Components/PacificStone";
+// import PacificStone from "./Components/PacificStone";
 
 import "./App.css";
 
@@ -57,16 +57,15 @@ function App() {
             handleClearTodos={handleClearTodos}
             TodoList={TodoList}
             todos={todos}
-            toggleTodo={toggleTodo}
             todoNameRef={todoNameRef}
           />
         </Route>
         <Route path="/SnakeGame">
           <SnakeGame />
         </Route>
-        <Route path="/PacificStone">
+        {/* <Route path="/PacificStone">
           <PacificStone />
-        </Route>
+        </Route> */}
       </Switch>
     </Router>
   );
