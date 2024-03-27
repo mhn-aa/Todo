@@ -5,6 +5,7 @@ import TodoApp from "./Components/TodoApp";
 import Links from "./Components/Links";
 import SnakeGame from "./Components/SnakeGame";
 // import PacificStone from "./Components/PacificStone";
+import PinkFlower from "./Components/PinkFlower";
 
 import "./App.css";
 
@@ -66,6 +67,9 @@ function App() {
         {/* <Route path="/PacificStone">
           <PacificStone />
         </Route> */}
+        <Route path="/PinkFlower">
+          <PinkFlower />
+        </Route>
       </Switch>
     </Router>
   );
